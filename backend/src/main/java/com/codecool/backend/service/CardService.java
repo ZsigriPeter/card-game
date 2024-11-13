@@ -31,9 +31,9 @@ public class CardService {
         return cardRepository.findAll();
     }
 
-    public void saveCard(NewCardDTO newCard) {
+    public void saveCard(@NotNull NewCardDTO newCard) {
         Card card = new Card(
-                newCard.getName(), newCard.getDescription(), newCard.getImage(), newCard.getRarity(), newCard.getCost());
+                newCard.getName(), newCard.getDescription(), newCard.getImage(), newCard.getRarity(), newCard.getCost(),newCard.getHealth(),newCard.getStrength());
         cardRepository.save(card);
     }
 
