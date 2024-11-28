@@ -24,6 +24,11 @@ public class CardController {
         return cardService.getAllCards().stream().map(Card::convertToDTO).toList();
     }
 
+    @PostMapping("/api/card-img")
+    public void addImgToCard(@RequestParam long id,@RequestBody NewCardDTO imgStr) {
+        cardService.setImgToCard(id, imgStr.getImgStr());
+    }
+
     @GetMapping("/api/card")
     public CardDTO getCardById(@RequestParam String id) {
         return cardService.getCard(id).convertToDTO();
@@ -32,5 +37,9 @@ public class CardController {
     @PostMapping("/api/card")
     public void createCard(@RequestBody NewCardDTO newCardDTO) {
         cardService.saveCard(newCardDTO);
+    }
+    @GetMapping("/initialise")
+    public void initialise() {
+        cardService.initialiseCards();
     }
 }

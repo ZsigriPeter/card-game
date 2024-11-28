@@ -1,0 +1,99 @@
+.card-container {
+    width: 200px;
+    background-color: #433434;
+    border: 2px solid #985917;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Prevent content overflow */
+    height: auto; /* Ensure height adjusts to content */
+}
+
+.card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #985917;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    align-items: center;
+    border: 2px solid #fd9c46;
+    height: 17px;
+    padding: 7px 7px 5px 5px;
+}
+
+.card-header h2 {
+    font-size: 14px;
+    color: #433434;
+}
+
+.card-name {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.card-cost {
+    font-size: 1rem;
+    color: #272323;
+    background-image: url("imgs/gem.png");
+    background-size: cover; /* Adjust how the image fits */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    font-weight: bold;
+}
+
+.card-image {
+    margin-top: 10px;
+    width: 160px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px #985917 solid;
+}
+
+.card-body {
+    margin: 0;
+}
+
+.card-rarity {
+}
+.card-description {
+    font-style: italic;
+    font-size: 13px;
+    color: #858585;
+}
+.card-health {
+    font-size: 1rem;
+    color: #ffffff;
+    background-image: url("imgs/shield.png");
+    background-size: cover; /* Adjust how the image fits */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    font-weight: bold;
+}
+.card-strength {
+    font-size: 1rem;
+    color: #ffffff;
+    background-image: url("imgs/icosahedron.png");
+    background-size: cover; /* Adjust how the image fits */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    font-weight: bold;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}

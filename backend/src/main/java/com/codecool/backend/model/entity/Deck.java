@@ -9,17 +9,18 @@ import java.util.List;
 
 @Entity
 public class Deck {
-
     @Id
     private Long id;
     private String name;
-    private int size;
+    private static final int MAX_SIZE = 20;
     @OneToMany
     private List<Card> cards;
 
     public Deck() {}
 
     public void addCard(Card card) {
-        cards.add(card);
+        if (cards != null && cards.size() < MAX_SIZE) {
+            cards.add(card);
+        }
     }
 }

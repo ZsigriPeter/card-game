@@ -8,6 +8,6 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Repository
-public interface CardRepository extends JpaRepository<Card, Integer> {
+public interface CardRepository extends JpaRepository<Card, Long> {
     Optional<Card> findByPublicId(UUID publicId);
 }

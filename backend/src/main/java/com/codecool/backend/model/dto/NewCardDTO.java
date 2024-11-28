@@ -6,7 +6,7 @@ import lombok.Data;
 public class NewCardDTO {
     private String name;
     private String description;
-    private byte[] image;
+    private String imgStr;
     private String rarity;
     private int cost;
     private int health;

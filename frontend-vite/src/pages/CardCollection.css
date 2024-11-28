@@ -1,0 +1,12 @@
+.card-collection-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); /* Ensure responsive grid */
+    gap: 1rem; /* Space between cards */
+    padding: 1rem; /* Add padding to container */
+    width: 100%; /* Ensure the container takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.card-container:hover {
+    transform: scale(1.1);
+}

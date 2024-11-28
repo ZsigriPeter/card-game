@@ -2,7 +2,7 @@ export interface CardType {
     name:string;
     publicId:string;
     description:string;
-    image: Uint8Array;
+    image: string;
     rarity:string;
     cost:number;
     health:number;

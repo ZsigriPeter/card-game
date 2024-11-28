@@ -2,6 +2,7 @@ import React from 'react';
 import {useEffect, useState} from "react";
 import Card from "../components/Card";
 import { CardType} from "../Interfaces.ts";
+import "./CardCollection.css";
 
 async function fetchAllCards(): Promise<CardType[]> {
     const res: Response = await fetch('/api/cards');
