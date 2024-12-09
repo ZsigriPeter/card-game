@@ -2,6 +2,8 @@ package com.codecool.backend.model.entity.card;
 
 import com.codecool.backend.model.dto.CardDTO;
 import jakarta.persistence.*;
+import lombok.Getter;
+
 import java.util.Base64;
 import java.util.UUID;
 
@@ -9,6 +11,7 @@ import java.util.UUID;
 public class Card {
     @Id
     @GeneratedValue
+    @Getter
     private long id;
     private String name;
     private String description;

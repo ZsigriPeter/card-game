@@ -8,3 +8,11 @@ export interface CardType {
     health:number;
     strength:number;
 };
+
+export interface DeckType {
+    deckId:number;
+    name:string;
+    cards:CardType[];
+    MAX_SIZE:number;
+};
+

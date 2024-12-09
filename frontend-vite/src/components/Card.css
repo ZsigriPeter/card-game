@@ -8,12 +8,13 @@
     text-align: center;
     transition: transform 0.3s ease;
     overflow: hidden; /* Prevent content overflow */
-    height: auto; /* Ensure height adjusts to content */
+    height: 420px;
 }
 
 .card-container:hover {
-    transform: translateY(-5px);
+    transform:scale(1.1) translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .card-header {
@@ -56,6 +57,7 @@
     object-fit: cover;
     border-radius: 8px;
     border: 3px #985917 solid;
+    margin-bottom: 0;
 }
 
 .card-body {
@@ -63,11 +65,48 @@
 }
 
 .card-rarity {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-bottom: 3px #985917 solid;
+    border-left: 3px #985917 solid;
+    border-right: 3px #985917 solid;
+    border-radius: 2em;
+    width: 160px;
+    padding-top: 0;
 }
+
+.card-rarity.common {
+    background-color: lightgray;
+    color: black;
+}
+
+.card-rarity.uncommon {
+    background-color: green;
+    color: black;
+}
+
+.card-rarity.epic {
+    background-color: purple;
+    color: black;
+}
+
+.card-rarity.legendary {
+    background-color: orangered;
+    color: black;
+}
+
+.card-rarity.rare {
+    background-color: darkblue;
+    color: white;
+}
+
 .card-description {
     font-style: italic;
     font-size: 13px;
     color: #858585;
+    height: 40px;
+    margin: 0;
 }
 .card-health {
     font-size: 1rem;
@@ -95,5 +134,4 @@
 .card-footer {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
 }

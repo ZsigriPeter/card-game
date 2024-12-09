@@ -30,3 +30,24 @@ INSERT INTO card (id, dtype, name, description, image, rarity, cost, public_id, 
     (28, 'Card', 'Iron Golem', 'A golem with a body of iron.', NULL, 'Epic', 7, gen_random_uuid(), 12, 7),
     (29, 'Card', 'Thunder Roc', 'A massive bird that summons storms.', NULL, 'Rare', 6, gen_random_uuid(), 6, 8),
     (30, 'Card', 'Cursed Knight', 'A knight cursed with dark powers.', NULL, 'Epic', 7, gen_random_uuid(), 7, 9);
+
+INSERT INTO deck (id,name) VALUES
+    (1,'Deck 1'),
+    (2,'Deck 2');
+
+INSERT INTO deck_cards (deck_id,cards_id) VALUES
+    (1,1),
+    (1,1),
+    (1,2),
+    (1,3),
+    (1,4),
+    (1,5),
+    (1,6);
+
+INSERT INTO deck_cards (deck_id,cards_id) VALUES
+    (2,4),
+    (2,7),
+    (2,8),
+    (2,5),
+    (2,6),
+    (2,9);
