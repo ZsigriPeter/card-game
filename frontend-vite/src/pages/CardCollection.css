@@ -1,0 +1,14 @@
+.card-collection-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.cards-and-deck-container {
+    display: flex;
+    height: 100vh;
+}

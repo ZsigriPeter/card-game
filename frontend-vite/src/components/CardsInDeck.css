@@ -1,0 +1,44 @@
+.deck-container {
+    flex: 2; /* 20% */
+    border: 3px #985917 solid;
+    min-width: 10em;
+    padding: 0.2em 0.2em;
+}
+
+.deck-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    border: 3px #985917 solid;
+    margin-bottom: 0.3em;
+}
+
+.card-in-deck {
+    height: 1.5em;
+    font-weight: bold;
+    border: 3px #985917 solid;
+    border-radius: 0.7em;
+}
+.card-in-deck p {
+    margin: 0;
+}
+
+.deck-size {
+    margin: 0;
+}
+
+.deck-save {
+    font-weight: bold;
+    border: 3px #985917 solid;
+}
+
+.deck-save:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #985917;
+}
+
+.card-in-deck:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
